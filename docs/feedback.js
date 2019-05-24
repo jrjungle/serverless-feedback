@@ -1,13 +1,13 @@
 /**
  * Web application
  */
-const apiUrl = 'https://service.us.apiconnect.ibmcloud.com/gws/apigateway/api/CHANGEME/feedback';
+const apiUrl = 'https://f9c04efd.eu-gb.apiconnect.appdomain.cloud/11-feedback';
 const feedback = {
   // retrieve the existing feedback entries
   get() {
     return $.ajax({
       type: 'GET',
-      url: `${https://f9c04efd.eu-gb.apiconnect.appdomain.cloud/11-feedback}/entries`,
+      url: `${apiUrl},
       dataType: 'json'
     });
   },
@@ -16,7 +16,7 @@ const feedback = {
     console.log('Sending', name, email, comment)
     return $.ajax({
       type: 'PUT',
-      url: `${https://f9c04efd.eu-gb.apiconnect.appdomain.cloud/11-feedback}/entries`,
+      url: `${apiUrl},
       contentType: 'application/json; charset=utf-8',
       data: JSON.stringify({
         name,
