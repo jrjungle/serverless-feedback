@@ -7,7 +7,7 @@ const feedback = {
   get() {
     return $.ajax({
       type: 'GET',
-      url: `${apiUrl}/entries`,
+      url: `${https://f9c04efd.eu-gb.apiconnect.appdomain.cloud/11-feedback}/entries`,
       dataType: 'json'
     });
   },
@@ -16,7 +16,7 @@ const feedback = {
     console.log('Sending', name, email, comment)
     return $.ajax({
       type: 'PUT',
-      url: `${apiUrl}/entries`,
+      url: `${https://f9c04efd.eu-gb.apiconnect.appdomain.cloud/11-feedback}/entries`,
       contentType: 'application/json; charset=utf-8',
       data: JSON.stringify({
         name,
